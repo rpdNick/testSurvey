@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/range-slider.min.css">
+    <script src="./js/range-slider.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-container">
+        <div class="header">
+            <img class="logo-img" src="./img/logo.svg" alt="logo">
+        </div>
+        <div class="worker-wrapper">
+            <div class="worker-photo">
+                <img src="./img/worker.png" alt="photo">
+            </div>
+            <div class="worker-info">
+                <p class="worker-question">Насколько в целом Вы удовлетворены работой <span class="no-wrapp">сотрудни<span class="txt-line line">ка отделения?</span></span></p>
+                <div class="box">
+                    <p class="worker-name">КУЦ Анастасия</p>
+                    <p class="worker-position">главный персональный менеджер</p>
+                </div>
+            </div>
+        </div>
+        <div class="range-section" id="range1">
+            <div class="container">
+                <div class="range-part inactive">
+                    <div class="small-line line"></div>
+                    <div class="small-line line"></div>
+                    <div class="small-line line"></div>
+                    <div class="small-line line"></div>
+                    <div class="middle-line line"></div>
+                    <div class="small-line line"></div>
+                    <div class="small-line line"></div>
+                    <div class="small-line line"></div>
+                    <div class="small-line line"></div>
+                    <div class="big-line line"></div>
+                </div>
+            </div>
+            <div class="range-numbers">
+                <div class="number-section">
+                    <span class="number">0</span>
+                </div>
+                <div class="number-section">
+                    <span class="number">1</span>
+                </div>
+                <div class="number-section">
+                    <span class="number">2</span>
+                </div>
+                <div class="number-section">
+                    <span class="number">3</span>
+                </div>
+                <div class="number-section">
+                    <span class="number">4</span>
+                </div>
+                <div class="number-section">
+                    <span class="number">5</span>
+                </div>
+                <div class="number-section">
+                    <span class="number">6</span>
+                </div>
+                <div class="number-section">
+                    <span class="number">7</span>
+                </div>
+                <div class="number-section">
+                    <span class="number">8</span>
+                </div>
+                <div class="number-section">
+                    <span class="number">9</span>
+                </div>
+                <div class="number-section">
+                    <span class="number">10</span>
+                </div>
+            </div>
+            <div class="help-txt">
+                <span>проведите по шкале вправо или влево</span>
+            </div>
+            <div id="range-slider-1"></div>
+            <input id="range1-val" type="range" min="0" max="10" value="" style="width: 1px; height: 1px; opacity: 0;">
+        </div>
+
+        <div class="hidden-content">
+            <div class="slide-box employer-slider-box">
+                <p class="slides-title">Что Вас разочаровало?</p>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-1-1" id="q-1-1">
+                                <label class="employer-label" for="q-1-1">
+                                    <div class="check-icon icon-1"></div>
+                                    <p class="employer-label-txt">Отсутствие желания помочь</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-1-1" id="q-1-2">
+                                <label class="employer-label" for="q-1-2">
+                                    <div class="check-icon icon-2"></div>
+                                    <p class="employer-label-txt">Вопрос не решен</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-1-1" id="q-1-3">
+                                <label class="employer-label" for="q-1-3">
+                                    <div class="check-icon icon-3"></div>
+                                    <p class="employer-label-txt">Медленное обслуживание</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-1-1" id="q-1-4">
+                                <label class="employer-label" for="q-1-4">
+                                    <div class="check-icon icon-4"></div>
+                                    <p class="employer-label-txt">Плохое знание продукта/ процесса</p>
+                                </label>
+                        </div>
+                        <div class="swiper-slide">
+                                <input type="radio" class="first-question-inp" name="q-1-1" id="q-1-5">
+                                <label class="employer-label" for="q-1-5">
+                                    <div class="check-icon icon-5"></div>
+                                    <p class="employer-label-txt">Невежливость сотрудника</p>
+                                </label>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <p class="test" style="margin-top: 50px"></p>
+    </div>
+    <style>
+        .for_line:after{
+            content: '';
+            width: 215px !important;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            max-width: 100.357px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    
+        @media screen and (max-width: 368px){
+            .for_line:after{
+                content: '';
+                width: 124px !important;
+            }
+        }
+    </style>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/range.js"></script>
+    <script>
+    history.pushState(null, null, location.href);
+    history.back(); history.forward();
+    window.onpopstate = function () { history.go(1); };
+
+    var swiper = new Swiper('.swiper-container', {
+      speed: 700,
+      slidesPerView: 2.8,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+    //   loop: true,
+    //   loopFillGroupWithBlank: true,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
+</body>
+</html>
