@@ -103,8 +103,8 @@ function runRange(selector) {
                 $(sliderItems[0]).find(".check-icon").css({'width':'58px', 'height':'78px'});
                 $(sliderItems[1]).find(".check-icon").css({'width':' 84px', 'height':'78px'});
                 $(sliderItems[2]).find(".check-icon").css({'width':' 36px', 'height':'69px', 'margin-top':'11px'});
-                $(sliderItems[3]).find(".check-icon").css({'width':' 70px', 'height':'78px'});
-                $(sliderItems[4]).find(".check-icon").css({'width':' 75px', 'height':'78px'});
+                $(sliderItems[3]).find(".check-icon").css({'width':' 65px', 'height':'80px'});
+                $(sliderItems[4]).find(".check-icon").css({'width':' 70px', 'height':'82px'});
                  
                 // $('.first-question-inp').prop('checked', false);  
                 let employerSituation = employerStateObj.situation1;
@@ -116,11 +116,11 @@ function runRange(selector) {
                    $(sliderItems[i]).find(".check-icon").removeClass(classToRemove);
                     workerInputs[i].value = employerSituation[i].text;
                 
-                   $('.employer-slider-box .slides-title').text('ВАC разочаровало:');
+                   $('.emploer-title').text('ВАC разочаровало:');
                 }
             }
             if (rangeVal >= 7 && rangeVal <= 9){
-                $('.employer-slider-box .slides-title').text('ВАМ испортило впечатление:');
+                $('.emploer-title').text('ВАМ испортило впечатление:');
             }
             if (rangeVal == 10){
 
@@ -140,7 +140,7 @@ function runRange(selector) {
                     $(sliderItems[i]).find(".employer-label-txt").text(employerSituation[i].text);
                     workerInputs[i].value = employerSituation[i].text;
                 }
-                $('.employer-slider-box .slides-title').text('ВАМ понравилось больше всего:');
+                $('.emploer-title').text('ВАМ понравилось больше всего:');
 
                 $('#range1 .ten-part').addClass('ten-part-active');
            }
@@ -208,7 +208,7 @@ function runRange2(selector) {
                     $(officeSliderItems[i]).find(".office-label-txt").text(officeSituation[i].text);
                     officeInputs[i].value = officeSituation[i].text;
                 }
-                $('.office-slider-box .slides-title').text('ВАС разочаровало:');
+                $('.office-title').text('ВАС разочаровало:');
                 $('.point10').hide();
             }
             if (rangeVal >= 7 && rangeVal <= 9){
@@ -217,7 +217,7 @@ function runRange2(selector) {
                     $(officeSliderItems[i]).find(".office-label-txt").text(officeSituation[i].text);
                     officeInputs[i].value = officeSituation[i].text;
                 }
-                $('.office-slider-box .slides-title').text('ВАМ испортило впечатление:');
+                $('.office-title').text('ВАМ испортило впечатление:');
             }
             if (rangeVal == 10){
                 let officeSituation = officeStateObj.situation2;
@@ -225,7 +225,7 @@ function runRange2(selector) {
                     $(officeSliderItems[i]).find(".office-label-txt").text(officeSituation[i].text);
                     officeInputs[i].value = officeSituation[i].text;
                 }
-                $('.office-slider-box .slides-title').text('ВАМ понравилось больше всего:');
+                $('.office-title').text('ВАМ понравилось больше всего:');
                 $('#range2 .ten-part').addClass('ten-part-active');
             }
             else{
@@ -236,6 +236,7 @@ function runRange2(selector) {
                     $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
                     $(officeScaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600', 'color':'#000'});
                     $('#range2 .zero-part').addClass('zero-part-active');
+                    $('.hide-office').fadeIn();
                 }
             }else {
                 $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
