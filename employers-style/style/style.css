@@ -56,14 +56,15 @@ body {
         line-height: 30px;
         font-weight: 800;
         color: #504F4F;
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        text-transform: uppercase; }
         body .page-container .employers-list-wrapper .employers-list-title .for-line {
           position: relative; }
         body .page-container .employers-list-wrapper .employers-list-title .for-line:after {
           content: '';
           position: absolute;
           display: block;
-          width: 220px;
+          width: 164px;
           height: 5px;
           bottom: -12px;
           left: 1px;

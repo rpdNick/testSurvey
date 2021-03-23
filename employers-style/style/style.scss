@@ -66,6 +66,7 @@ body{
                 font-weight: 800;
                 color: #504F4F;
                 margin-bottom: 40px;
+                text-transform: uppercase;
                 .for-line{
                     position: relative;
                 }
@@ -73,7 +74,8 @@ body{
                     content: '';
                     position: absolute;
                     display: block;
-                    width: 220px;
+                    //width: 220px;
+                    width: 164px;
                     height: 5px;
                     bottom: -12px;
                     left: 1px;
