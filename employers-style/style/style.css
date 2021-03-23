@@ -65,9 +65,14 @@ body {
           display: block;
           width: 220px;
           height: 5px;
-          bottom: -8px;
+          bottom: -12px;
           left: 1px;
           background: #504F4F; }
+      body .page-container .employers-list-wrapper .txt {
+        font-size: 16px;
+        color: #555454;
+        margin-top: 10px;
+        margin-bottom: 30px; }
       body .page-container .employers-list-wrapper ul {
         margin-top: 20px; }
         body .page-container .employers-list-wrapper ul li {

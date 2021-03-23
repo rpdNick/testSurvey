@@ -238,6 +238,7 @@ function runRange2(selector) {
                     $('#range2 .zero-part').addClass('zero-part-active');
                     $('.hide-office').fadeIn();
                 }
+
             }else {
                 $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal', 'color':'#807d7d'});
                 $(officeScaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal', 'color':'#807d7d'});

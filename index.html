@@ -24,7 +24,7 @@
             <div class="worker-info">
                 <p class="worker-question">Насколько в целом Вы удовлетворены работой <span class="no-wrapp">сотрудни<span class="txt-line line">ка отделения?</span></span></p>
                 <div class="box">
-                    <p class="worker-name">КУЦ Анастасия</p>
+                    <p class="worker-name">Анастасия</p>
                     <p class="worker-position">главный персональный менеджер</p>
                 </div>
             </div>
@@ -294,7 +294,7 @@
                             </svg>
                         </div>
                     </div>
-                    <span class="second-range-help-txt">проведите по шкале вправо или влево</span>
+                    <span class="second-range-help-txt" style="display: none;">проведите по шкале вправо или влево</span>
                 </div>
                 <div id="range-slider-2"></div>
                 <input type="range" min="0" max="10" style="width: 1px; height: 1px; opacity: 0;" id="range2-val">
@@ -449,6 +449,14 @@
         }
         setTimeout(reverseItems, 2000);
     })
+
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        function hideHint(){
+            $('.first-range-help-txt').fadeOut();
+        }
+        setTimeout(hideHint, 2000);
+    });
      // Check attachments
      // let file = document.getElementById('add-file');
      //    file.addEventListener('change', () => {
