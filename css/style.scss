@@ -628,7 +628,7 @@ body {
                 }
                 input[type='radio']:checked + label .check-icon{
                 //    background-color: #9F0002;
-                   transition: .5s;
+                //   transition: .5s;
                 }
                 input[type='radio']:checked + label .icon-1{
                     background-image: url(../img/scroll-icons/icons/XRed.svg) !important;
@@ -665,14 +665,14 @@ body {
                     text-decoration-color: #9F0002;
                     text-underline-position: under;
                     text-underline-offset: -1px;
-                    transition: .5s;
+                    //transition: .5s;
                 }
                 input[type='radio']:checked + label .employer-label-txt{
                     text-decoration: underline;
                     text-decoration-color: #9F0002;
                     text-underline-position: under;
                     text-underline-offset: -1px;
-                    transition: 1s;
+                    //transition: 1s;
                 }
                 .employer-label{
                     cursor: pointer;
@@ -684,13 +684,12 @@ body {
                         // -webkit-mask-repeat: no-repeat;
                         margin: 0 auto;
                         // background-color: #d1d1d1;
-                        transition: 0.5s;
+                        //transition: 0.5s;
                     }
                     .icon-1{
                         width: 67px;
                         height: 82px;
                         // background-image: url(../img/scroll-icons/1.png);
-                        -webkit-mask-size: 67px;
                     }
                     .icon-2{
                         width: 95px;
@@ -741,7 +740,7 @@ body {
                         background-size: contain;
                         background-repeat: no-repeat;
                         margin: 0 auto;
-                        transition: 0.5s;
+                        //transition: 0.5s;
                     }
                     .icon-1{
                         width: 56px;

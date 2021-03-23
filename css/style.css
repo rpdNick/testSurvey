@@ -442,8 +442,6 @@ body {
   .hidden-content .slide-box .swiper-container .swiper-slide input {
     display: none;
     opacity: 0; }
-  .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .check-icon {
-    transition: .5s; }
   .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .icon-1 {
     background-image: url(../img/scroll-icons/icons/XRed.svg) !important; }
   .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .icon-2 {
@@ -468,14 +466,12 @@ body {
     text-decoration: underline;
     text-decoration-color: #9F0002;
     text-underline-position: under;
-    text-underline-offset: -1px;
-    transition: .5s; }
+    text-underline-offset: -1px; }
   .hidden-content .slide-box .swiper-container .swiper-slide input[type='radio']:checked + label .employer-label-txt {
     text-decoration: underline;
     text-decoration-color: #9F0002;
     text-underline-position: under;
-    text-underline-offset: -1px;
-    transition: 1s; }
+    text-underline-offset: -1px; }
   .hidden-content .slide-box .swiper-container .swiper-slide .employer-label {
     cursor: pointer;
     min-width: 100px; }
@@ -483,12 +479,10 @@ body {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      margin: 0 auto;
-      transition: 0.5s; }
+      margin: 0 auto; }
     .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-1 {
       width: 67px;
-      height: 82px;
-      -webkit-mask-size: 67px; }
+      height: 82px; }
     .hidden-content .slide-box .swiper-container .swiper-slide .employer-label .icon-2 {
       width: 95px;
       height: 82px; }
@@ -526,8 +520,7 @@ body {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      margin: 0 auto;
-      transition: 0.5s; }
+      margin: 0 auto; }
     .hidden-content .slide-box .swiper-container .swiper-slide .office-label .icon-1 {
       width: 56px;
       height: 76px;
