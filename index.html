@@ -422,11 +422,13 @@
         $('.first-range-help .arrow-right').addClass('active-arrow');
         $('.first-range-help .arrow-line').css('width','24px');
         $('.first-range-help').css('background','#e60028');
+        $('.first-range-help .hand').addClass('hand-active');
         function reverseItems(){
             $('.first-range-help-txt').fadeOut();
             $('.first-range-help .arrow-right').removeClass('active-arrow');
             $('.first-range-help .arrow-line').css('width','0px');
             $('.first-range-help').css('background','#ff7381');
+            $('.first-range-help .hand').removeClass('hand-active');
         }
         setTimeout(reverseItems, 2000);
     })
@@ -435,11 +437,13 @@
         $('.second-range-help .arrow-right').addClass('active-arrow');
         $('.second-range-help .arrow-line').css('width','24px');
         $('.second-range-help').css('background','#e60028');
+        $('.second-range-help .hand').addClass('hand-active');
         function reverseItems(){
             $('.second-range-help-txt').fadeOut();
             $('.second-range-help .arrow-right').removeClass('active-arrow');
             $('.second-range-help .arrow-line').css('width','0px');
             $('.second-range-help').css('background','#ff7381');
+            $('.second-range-help .hand').removeClass('hand-active');
         }
         setTimeout(reverseItems, 2000);
     })

@@ -1,34 +1,34 @@
 employerStateObj = {
     situation1: [{
-        url: './img/scroll-icons/1.png',
+        url: './img/scroll-icons/icons/X.svg',
         text: '#НЕжелание Помочь'
     }, {
-        url: './img/scroll-icons/2.png',
+        url: './img/scroll-icons/icons/CHEL.svg',
         text: '#НЕрешён Вопрос'
     }, {
-            url: './img/scroll-icons/3.png',
+            url: './img/scroll-icons/icons/CLOCK.svg',
             text: '#Медленное Обслуживание'
         }, {
-            url: './img/scroll-icons/4.png',
+            url: './img/scroll-icons/icons/DIALOG.svg',
             text: '#НЕзнает Продукт Процесс'
         }, {
-            url: './img/scroll-icons/5.png',
+            url: './img/scroll-icons/icons/SAD.svg',
             text: '#Грубость Сотрудника'
         }],
     situation2: [{
-        url: './img/scroll-icons/6.png',
+        url: './img/scroll-icons/icons/Hands.svg',
         text: '#Желание Помочь'
     }, {
-        url: './img/scroll-icons/7.png',
+        url: './img/scroll-icons/icons/SAY.svg',
         text: '#Решил Вопрос'
     }, {
-            url: './img/scroll-icons/8.png',
+            url: './img/scroll-icons/icons/Speed.svg',
             text: '#Быстрый Сервис'
         }, {
-            url: './img/scroll-icons/9.png',
+            url: './img/scroll-icons/icons/Star.svg',
             text: '#Знает Продукт Процесс'
         }, {
-            url: './img/scroll-icons/10.png',
+            url: './img/scroll-icons/icons/Heart.svg',
             text: '#Вежливый сотрудник'
         }],
 }
@@ -98,20 +98,22 @@ function runRange(selector) {
             $('#range1-val').val(rangeVal);
             
             if(rangeVal < 10){
-
+               
                 // images NOT STANDART size!!!!!
-                $(sliderItems[0]).find(".check-icon").css({'width':'58px', 'height':'78px','-webkit-mask-size':'58px'});
-                $(sliderItems[1]).find(".check-icon").css({'width':' 84px', 'height':'78px','-webkit-mask-size':'84px'});
-                $(sliderItems[2]).find(".check-icon").css({'width':' 36px', 'height':'69px','-webkit-mask-size':'36px', 'margin-top':'11px'});
-                $(sliderItems[3]).find(".check-icon").css({'width':' 70px', 'height':'78px','-webkit-mask-size':'70px'});
-                $(sliderItems[4]).find(".check-icon").css({'width':' 75px', 'height':'78px','-webkit-mask-size':'75px'});
+                $(sliderItems[0]).find(".check-icon").css({'width':'58px', 'height':'78px'});
+                $(sliderItems[1]).find(".check-icon").css({'width':' 84px', 'height':'78px'});
+                $(sliderItems[2]).find(".check-icon").css({'width':' 36px', 'height':'69px', 'margin-top':'11px'});
+                $(sliderItems[3]).find(".check-icon").css({'width':' 70px', 'height':'78px'});
+                $(sliderItems[4]).find(".check-icon").css({'width':' 75px', 'height':'78px'});
                  
                 // $('.first-question-inp').prop('checked', false);  
                 let employerSituation = employerStateObj.situation1;
                 for (let i = 0; i < sliderItems.length; i++){
+                    let classToRemove = 'changed-icon'+[i];
                     // console.log($(sliderItems)[i]);
-                   $(sliderItems[i]).find(".check-icon").css({'-webkit-mask-image': `url("${employerSituation[i].url}")`});
+                   $(sliderItems[i]).find(".check-icon").css({'background-image': `url("${employerSituation[i].url}")`});
                    $(sliderItems[i]).find(".employer-label-txt").text(employerSituation[i].text);
+                   $(sliderItems[i]).find(".check-icon").removeClass(classToRemove);
                     workerInputs[i].value = employerSituation[i].text;
                 
                    $('.employer-slider-box .slides-title').text('ВАC разочаровало:');
@@ -123,15 +125,18 @@ function runRange(selector) {
             if (rangeVal == 10){
 
                  // images NOT STANDART size!!!!!
-                 $(sliderItems[0]).find(".check-icon").css({'width':'70px', 'height':'78px','-webkit-mask-size':'70px'});
-                 $(sliderItems[1]).find(".check-icon").css({'width':' 73px', 'height':'78px','-webkit-mask-size':'73px'});
-                 $(sliderItems[2]).find(".check-icon").css({'width':' 60px', 'height':'78px','-webkit-mask-size':'60px', 'margin-top':'0px'});
-                 $(sliderItems[4]).find(".check-icon").css({'width':' 68px', 'height':'78px','-webkit-mask-size':'68px'});
+                 $(sliderItems[0]).find(".check-icon").css({'width':'70px', 'height':'78px'});
+                 $(sliderItems[1]).find(".check-icon").css({'width':' 73px', 'height':'78px'});
+                 $(sliderItems[2]).find(".check-icon").css({'width':' 60px', 'height':'78px', 'margin-top':'0px'});
+                 $(sliderItems[4]).find(".check-icon").css({'width':' 68px', 'height':'78px'});
 
                 let employerSituation = employerStateObj.situation2;
                 for (let i = 0; i < sliderItems.length; i++){
                     // console.log($(sliderItems[i]).find(".check-icon"));
-                    $(sliderItems[i]).find(".check-icon").css({'-webkit-mask-image': `url("${employerSituation[i].url}")`});
+                    let addClass = 'changed-icon'+[i];
+                    console.log(addClass)
+                    $(sliderItems[i]).find(".check-icon").css({'background-image': `url("${employerSituation[i].url}")`});
+                    $(sliderItems[i]).find(".check-icon").addClass(addClass)
                     $(sliderItems[i]).find(".employer-label-txt").text(employerSituation[i].text);
                     workerInputs[i].value = employerSituation[i].text;
                 }
@@ -145,12 +150,12 @@ function runRange(selector) {
             if(wChanged == 1){
                 for(let i = 0; i < wscaleNumbers.length; i++){
                     $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
-                    $(wscaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
+                    $(wscaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600', 'color':'#000'});
                     $('#range1 .zero-part').addClass('zero-part-active');
                 }
             }else {
                 $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
-                $(wscaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal'});
+                $(wscaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal', 'color':'#807d7d'});
                 $('#range1 .zero-part').removeClass('zero-part-active');
             }
         
@@ -229,12 +234,12 @@ function runRange2(selector) {
             if(oChange == 1){
                 for(let i = 0; i < officeScaleNumbers.length; i++){
                     $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
-                    $(officeScaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600'});
+                    $(officeScaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600', 'color':'#000'});
                     $('#range2 .zero-part').addClass('zero-part-active');
                 }
             }else {
                 $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
-                $(officeScaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal'});
+                $(officeScaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal', 'color':'#807d7d'});
                 $('#range2 .zero-part').removeClass('zero-part-active');
             }
 

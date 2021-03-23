@@ -257,6 +257,7 @@ body {
                         }
                         .big-line{
                             height: 32px;
+                            background:#d1d1d1;
                         }
                     } 
                     .zero-part-active{
@@ -374,6 +375,9 @@ body {
             .line {
                 background: #d3d3d3 !important;
             }
+            .big-line{
+                background: #d1d1d1 !important;
+            }
         }
 
         &:first-child {
@@ -452,7 +456,7 @@ body {
             position: relative;
             font-size: 14px;
             transition: .3s;
-            color: #000;
+            color: #807d7d;
         }
     }
     .number-section:first-child{
@@ -518,8 +522,8 @@ body {
     margin-top: 20px;
     position: relative;
     .help-icon{
-        width: 14px;
-        height: 14px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
         background: #ff7381;
         transition: .5s;
@@ -529,7 +533,7 @@ body {
             width: 10px;
             height: 20px;
             position: absolute;
-            left: -13px;
+            left: -14px;
             top: -2px;
             .l-arrow{
                 //stroke: #000 !important;
@@ -539,7 +543,7 @@ body {
             width: 10px;
             height: 20px;
             position: absolute;
-            right: -13px;
+            right: -14px;
             top: -2px;
             .r-arrow{
                 //stroke: #000 !important;
@@ -568,7 +572,7 @@ body {
             display: block;
             width: 35px;
             height: 36px;
-            background-image: url(../img/hand.svg);
+            background-image: url(../img/сursorNeaktive.svg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
@@ -579,11 +583,13 @@ body {
             position: absolute;
             display: block;
             width: 30px;
-            height: 30px;
-            background-image: url("../img/hand.svg");
+            height: 36px;
+            background-image: url(../img/cursor.svg);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
+            left: -6px;
+            top: 5px;
         }
     }
     span{
@@ -621,9 +627,39 @@ body {
                     opacity: 0;
                 }
                 input[type='radio']:checked + label .check-icon{
-                   background-color: #9F0002;
+                //    background-color: #9F0002;
                    transition: .5s;
                 }
+                input[type='radio']:checked + label .icon-1{
+                    background-image: url(../img/scroll-icons/icons/XRed.svg) !important;
+                    }
+                input[type='radio']:checked + label .icon-2{
+                    background-image: url(../img/scroll-icons/icons/CHELred.svg) !important;
+                    }
+                input[type='radio']:checked + label .icon-3{
+                    background-image: url(../img/scroll-icons/icons/CLOCKRed.svg) !important;
+                    }
+                input[type='radio']:checked + label .icon-4{
+                    background-image: url(../img/scroll-icons/icons/DIALOGRed.svg) !important;
+                    }
+                input[type='radio']:checked + label .icon-5{
+                    background-image: url(../img/scroll-icons/icons/SADred.svg) !important;
+                    }
+                    input[type='radio']:checked + label .changed-icon0{
+                        background-image: url(../img/scroll-icons/icons/HandsRed.svg) !important;
+                        }
+                        input[type='radio']:checked + label .changed-icon1{
+                            background-image: url(../img/scroll-icons/icons/SAYRed.svg) !important;
+                            }
+                            input[type='radio']:checked + label .changed-icon2{
+                                background-image: url(../img/scroll-icons/icons/SpeedRed.svg) !important;
+                                }
+                                input[type='radio']:checked + label .changed-icon3{
+                                    background-image: url(../img/scroll-icons/icons/StarRed.svg) !important;
+                                    }
+                                    input[type='radio']:checked + label .changed-icon4{
+                                        background-image: url(../img/scroll-icons/icons/HeartRed.svg) !important;
+                                        }
                 input[type='radio']:checked + label .office-label-txt{
                     text-decoration: underline;
                     text-decoration-color: #9F0002;
@@ -644,41 +680,34 @@ body {
                     .check-icon{
                         background-position: center;
                         background-size: contain;
-                        -webkit-mask-repeat: no-repeat;
+                        background-repeat:no-repeat;
+                        // -webkit-mask-repeat: no-repeat;
                         margin: 0 auto;
-                        background-color: #d1d1d1;
+                        // background-color: #d1d1d1;
                         transition: 0.5s;
                     }
                     .icon-1{
                         width: 67px;
                         height: 82px;
-                        -webkit-mask-image: url(../img/scroll-icons/1.png);
+                        // background-image: url(../img/scroll-icons/1.png);
                         -webkit-mask-size: 67px;
                     }
                     .icon-2{
                         width: 95px;
                         height: 82px;
-                        -webkit-mask-image: url(../img/scroll-icons/2.png);
-                        -webkit-mask-size: 95px;
                     }
                     .icon-3{
                         width: 40px;
                         height: 75px;
-                        -webkit-mask-image: url(../img/scroll-icons/3.png);
-                        -webkit-mask-size: 40px;
                         margin-top: 7px;
                     }
                     .icon-4{
                         width: 75px;
                         height: 82px;
-                        -webkit-mask-image: url(../img/scroll-icons/4.png);
-                        -webkit-mask-size: 75px;
                     }
                     .icon-5{
                         width: 75px;
                         height: 82px;
-                        -webkit-mask-image: url(../img/scroll-icons/5.png);
-                        -webkit-mask-size: 75px;
                     }
                     .employer-label-txt{
                         font-size: 15px;
@@ -689,46 +718,55 @@ body {
                         font-family: 'MullerMedium';
                     }
                 }
+                input[type='radio']:checked + .office-label .icon-1{
+                    background-image: url(../img/scroll-icons/icons2/Clock2Red.svg) !important;
+                    }
+                    input[type='radio']:checked + .office-label .icon-2{
+                        background-image: url(../img/scroll-icons/icons2/TowerRed.svg) !important;
+                        }
+                        input[type='radio']:checked + .office-label .icon-3{
+                            background-image: url(../img/scroll-icons/icons2/ArmchairRed.svg) !important;
+                            }
+                            input[type='radio']:checked + .office-label .icon-4{
+                                background-image: url(../img/scroll-icons/icons2/PeopleRed.svg) !important;
+                                }
+                                input[type='radio']:checked + .office-label .icon-5{
+                                    background-image: url(../img/scroll-icons/icons2/TapkiRed.svg) !important;
+                                    }
                 .office-label{
                     cursor: pointer;
                     max-width: 110px;
                     .check-icon{
                         background-position: center;
                         background-size: contain;
-                        -webkit-mask-repeat: no-repeat;
+                        background-repeat: no-repeat;
                         margin: 0 auto;
-                        background-color: #807d7d;
                         transition: 0.5s;
                     }
                     .icon-1{
                         width: 60px;
                         height: 76px;
-                        -webkit-mask-image: url(../img/office-scroll-icons/1.png);
-                        -webkit-mask-size: 60px;
+                        background-image:url(../img/scroll-icons/icons2/Clock2.svg);
                     }
                     .icon-2{
                         width: 62px;
                         height: 76px;
-                        -webkit-mask-image: url(../img/office-scroll-icons/2.png);
-                        -webkit-mask-size: 62px;
+                        background-image:url(../img/scroll-icons/icons2/Tower.svg)
                     }
                     .icon-3{
                         width: 60px;
                         height: 76px;
-                        -webkit-mask-image: url(../img/office-scroll-icons/3.png);
-                        -webkit-mask-size: 60px;
+                        background-image:url(../img/scroll-icons/icons2/Armchair.svg)
                     }
                     .icon-4{
                         width: 66px;
                         height: 76px;
-                        -webkit-mask-image: url(../img/office-scroll-icons/4.png);
-                        -webkit-mask-size: 66px;
+                        background-image:url(../img/scroll-icons/icons2/People.svg)
                     }
                     .icon-5{
                         width: 75px;
                         height: 76px;
-                        -webkit-mask-image: url(../img/office-scroll-icons/5.png);
-                        -webkit-mask-size: 75px;
+                        background-image:url(../img/scroll-icons/icons2/Tapki.svg)
                     }
                     .office-label-txt{
                         font-size: 15px;

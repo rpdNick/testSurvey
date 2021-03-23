@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6d8e1839-12e0-4dba-a259-a15deb8ff378" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employers-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/employers-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employers-style/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/employers-style/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employers-style/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/employers-style/style/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employers-style/style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/employers-style/style/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/2.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/img/employers/2.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/3.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/img/employers/3.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/4.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/img/employers/4.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/5.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/img/employers/5.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/6.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/img/employers/6.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/old/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/old/2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/old/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/old/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/old/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/old/6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/original/Базотов Роман ведущий финансовый менеджер.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/original/Куц Анастасия главный персональный менеджер.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/original/Новикова Юлия  главный клиентский менеджер по обслуживанию юридических лиц.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/original/Сергей Бондарев  управляющий.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/original/Сыркина Юлия старший финансовый менеджер.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/original/Хромова Екатерина  кассир.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/employers/photo.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/range.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/range.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1q9TVWWDLMoD3dLic9b8G7IxEX3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d8e1839-12e0-4dba-a259-a15deb8ff378" name="Default Changelist" comment="" />
+      <created>1616490830270</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616490830270</updated>
+      <workItem from="1616490831615" duration="438000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2381" y="165" key="SettingsEditor" timestamp="1616491124436">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2381" y="165" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616491124436" />
+  </component>
+</project>
