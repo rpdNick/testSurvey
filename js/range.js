@@ -149,12 +149,12 @@ function runRange(selector) {
            }
             if(wChanged == 1){
                 for(let i = 0; i < wscaleNumbers.length; i++){
-                    $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+                    $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal', 'color':'#807d7d'});
                     $(wscaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600', 'color':'#000'});
                     $('#range1 .zero-part').addClass('zero-part-active');
                 }
             }else {
-                $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+                $(wscaleNumbers).css({'font-size':'14px', 'font-weight':'normal', 'color':'#807d7d'});
                 $(wscaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal', 'color':'#807d7d'});
                 $('#range1 .zero-part').removeClass('zero-part-active');
             }
@@ -233,13 +233,13 @@ function runRange2(selector) {
                }
             if(oChange == 1){
                 for(let i = 0; i < officeScaleNumbers.length; i++){
-                    $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+                    $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal', 'color':'#807d7d'});
                     $(officeScaleNumbers[rangeVal]).css({'font-size':'16px', 'font-weight':'600', 'color':'#000'});
                     $('#range2 .zero-part').addClass('zero-part-active');
                     $('.hide-office').fadeIn();
                 }
             }else {
-                $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal'});
+                $(officeScaleNumbers).css({'font-size':'14px', 'font-weight':'normal', 'color':'#807d7d'});
                 $(officeScaleNumbers[rangeVal]).css({'font-size':'14px', 'font-weight':'normal', 'color':'#807d7d'});
                 $('#range2 .zero-part').removeClass('zero-part-active');
             }
