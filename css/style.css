@@ -707,7 +707,9 @@ body {
       transform-origin: top left;
       width: 0; }
     .hidden-content .btn-wrapper .button-overlay .submit-btn:hover {
-      color: #fff; }
+      color: #fff;
+      background: #e60028;
+      transition: 1s; }
     .hidden-content .btn-wrapper .button-overlay .submit-btn:hover:after {
       height: 145%;
       width: 135%; }
